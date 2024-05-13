@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.padre{
+    display: grid;
+    grid-template-areas:
+    'nav nav'
+    'barra section'
+    'footer footer'
+    ;
+    grid-template-columns: 1fr 6fr;
+}
+
+nav{
+    grid-area: nav;
+    color: white;
+    text-align: center;
+    background-color: darkblue;
+    height: 5vh;
+}
+
+barra{
+    grid-area: barra;
+    background-color: lightgrey;
+    height: 90vh;
+}
+
+section{
+    grid-area: section;
+    background-color: gray;
+    height: 90vh;
+}
+
+.producto{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.prodItem{
+    flex-grow: 1;
+    width: 30%;
+}
+
+footer{
+    grid-area: footer;
+    text-align: center;
+    height: 5vh;
+}
