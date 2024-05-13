@@ -49,6 +49,8 @@ section{
     max-height: 80%;
     object-fit: cover;
 
+}
+
 footer{
     grid-area: footer;
     text-align: center;
