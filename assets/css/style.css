@@ -34,14 +34,19 @@ section{
 }
 
 .producto{
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
 }
-
-.prodItem{
-    flex-grow: 1;
-    width: 30%;
-    height: 30%;
+.prodItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: gray;
+    height: 60vh;
+    width: 60vh;
+    gap: 20px;
+    flex-wrap: nowrap;
 }
 
 .img-producto {
